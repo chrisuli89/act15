@@ -64,14 +64,14 @@
 	$("#res").text("Resultado:");
 
 	$('#lista li').click(function() {
-  		$("#datos").html($(this).text());
+  		$("#datos").html("Resultado: "+$(this).text());
   		$("#datos").css("background-color","#728C00");
 
 	});
 	$("li:even").css("background-color", "#D4D7DA");
 	$("li:odd").css("background-color", "#FFFFFF");
 	$("li").hover(function() {
-		$(this).css("color", "red");
+		$(this).css({"color":"red","cursor":"pointer"});
 	}, 
 	function () {
 		$(this).css("color","black");
